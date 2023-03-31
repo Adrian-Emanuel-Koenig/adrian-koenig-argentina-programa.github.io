@@ -1,0 +1,232 @@
+* {
+  color: white;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  background-color: black;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1% 3%;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                   Header                                   */
+/* -------------------------------------------------------------------------- */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+
+.logo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+}
+
+.logo div nav ul {
+  list-style: none;
+}
+.logo div nav ul li a {
+  text-decoration: none;
+  margin: 30px;
+}
+.logo div nav ul li a:hover {
+  color: rgb(250, 250, 100);
+}
+.contact {
+  cursor: pointer;
+  font-size: 1rem;
+  margin-right: 60px;
+  padding: 2%;
+  border: 2px solid white;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                                    Main                                    */
+/* -------------------------------------------------------------------------- */
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  height: 100%;
+}
+.welcome h1 {
+  font-size: 2.2rem;
+  color: rgb(250, 250, 100);
+}
+.iconos {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.iconos img {
+  cursor: pointer;
+  width: 70px;
+  height: 70px;
+}
+/* -------------------------------- Portfolio ------------------------------- */
+.proyects {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 20px;
+  justify-content: space-around;
+}
+
+.proyects div {
+  border: 2px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: 300px;
+  cursor: pointer;
+  filter: blur(3px);
+}
+
+.proyects div:hover {
+  transition: filter 0.8s ease-in-out;
+  filter: blur(0px);
+}
+.portfolio h1 {
+  margin: 50px;
+  font-size: 3rem;
+}
+.proyects h2 {
+  background-color: rgba(0, 0, 0, 0);
+  color: white;
+  text-shadow: 2px 2px 5px black;
+}
+
+.ecommerce {
+  background: url(./src/imgs/books.jpg);
+  background-size: cover;
+}
+
+.iphone {
+  background: url(./src/imgs/iphone.jpg);
+  background-size: cover;
+}
+.chat {
+  background: url(./src/imgs/chat.jpg);
+  background-size: cover;
+}
+/* -------------------------------- About me -------------------------------- */
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: rgb(206, 219, 82);
+  padding: 2%;
+  width: 100%;
+}
+.details p {
+  color: black;
+}
+.details ul {
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+  gap: 15px;
+  list-style: none;
+}
+#avatar {
+  width: 200px;
+  height: 200px;
+}
+.details img {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.text-effect {
+  opacity: 0;
+  transition: opacity 1s ease;
+  opacity: 1;
+}
+
+.aboutMain {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.portfolio {
+  display: flex;
+  flex-direction: column;
+}
+
+/* ---------------------------------- Form ---------------------------------- */
+ul,
+a {
+  color: white;
+  margin: 0;
+  padding: 0;
+}
+.media ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.media ul li a img {
+  width: 40px;
+  height: 40px;
+}
+/* --------------------------------- Footer --------------------------------- */
+footer {
+  text-align: center;
+}
+footer p {
+  color: grey;
+}
+
+/* ---------------------------------- MEDIA --------------------------------- */
+@media (max-width: 767px) {
+  * {
+    font-size: 1rem;
+  }
+
+  .logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+  }
+
+  .logo img {
+    width: 80px;
+    height: 80px;
+  }
+}
